@@ -11,7 +11,7 @@
 
 
 <body onload="pageLoad()" style="background-color: darkgrey">
-
+ <h4>Try searching something!</h4> <input type="text" onkeypress="keyPress()">
 
 <ul class="navigation">
     <li><a href="index.html">Home</a></li>
@@ -31,22 +31,24 @@
     </div>
 </center>
 
-<img id="squirrel" alt="Squirrel"
-     src="https://upload.wikimedia.org/wikipedia/commons/0/02/Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg">
-<img id="hare" alt="Hare"
+<img class="animals" alt="Squirrel"
+     src="https://upload.wikimedia.org/wikipedia/commons/0/02/Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg"
+     onmouseover="addBorder()">
+<img class="animals" alt="Hare"
      src="https://ossa.emu.ee/wp-content/uploads/2021/11/Halljanes-310720-Muusikus-768x512.jpg"
-     onmouseover="addBorder()" onmouseleave="removeBorder()">
-
-<img id="wolf" alt="Wolf"
+     onmouseover="addBorder()">
+<img class="animals" alt="Wolf"
      src="https://upload.wikimedia.org/wikipedia/commons/6/69/Canis_lupus_laying_in_grass.jpg"
->
+     onmouseover="addBorder()">
+
 <div id="paragraph">
-    <p>
+    <p id="colorchange">
         This list of mammals of Estonia shows the IUCN Red List status of the mammal fauna occurring in Estonia. It is
         somewhat impoverished compared to that of southern and central Europe due to the short period since the last ice
         age. Native species are considered to be those which are today present in the country. There are no endemic mammal
         species in Estonia. The list follows Moks et al. (2015) with later additions.
     </p>
+     <button ondblclick="doubleClick()">Double-click to hurt your eyes!</button>
 </div>
 
 <hr>
